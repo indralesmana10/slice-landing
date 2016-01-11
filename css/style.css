@@ -254,37 +254,50 @@ body {
     border-radius: 0;
 }
 
-button.envelope-1{
+button.envelope-1 {
     background-color: #f6cc4c;
 }
 
-button.envelope-1 span{
+button.envelope-1 span {
     color: #000
 }
 
-button.envelope-2{
+button.envelope-2 {
     background-color: #000;
 }
 
-button.envelope-2 span{
+button.envelope-2 span {
     color: #f6cc4c
 }
 
-.input-group-btn button{
+.input-group-btn button {
     width: 75px;
     height: 75px;
-        font-size: 25px;
+    font-size: 25px;
 }
-
 
 @media (min-width: 768px) {
     .modal-container {
         margin: auto;
         width: 700px;
     }
+    .submit-btn {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
+    .input-group-btn {
+        display: none;
+    }
+    .input-group-addon {
+        padding: 6px 18px;
+        font-size: 15px!important;
+    }
+    .phone-number {
+        height: 50px;
+        font-size: 16px;
+    }
     .container p {
         width: 100%;
         font-size: 14px;
@@ -298,5 +311,9 @@ button.envelope-2 span{
     }
     .modal-container p {
         font-size: 20px;
+    }
+    .modal-container h1 {
+        font-size: 30px;
+        padding: 1em 0;
     }
 }
